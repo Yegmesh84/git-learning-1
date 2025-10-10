@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkolivegreen;
+    font-family: monospace;
+    font-size: large;
+}
+h1{
+    text-align: center;
+}
+.navbar{
+    text-align: center;
+}
+.bart{
+    display: inline-block;
+    
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    text-wrap: wrap;
+    
+}
+.subhero{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+.hero-section{
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+.cards{
+    border: solid black 10px;
+    border-radius: 20px;
+    box-shadow: 10px 20px 20px 10px antiquewhite;
+}
+p{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
