@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+.container::after{
+    content: "default view";
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    padding: 50px;
+    color: black;
+}
+/* Mobile View */
+@media only screen and (min-width:1px) and (max-width:599px) {
+    body{
+        background-color: blue;
+    }
+
+    .container::after {
+        content: "Mobile View";
+        color: white;
+    }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 600px) and (max-width:899px) {
+    body {
+        background-color: yellowgreen;
+
+        .container::after {
+            content: "Tablet View";
+            color: white;
+        }
+    }
+}
