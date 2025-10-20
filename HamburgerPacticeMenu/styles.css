@@ -6,7 +6,7 @@
 
 /* Navbar Styles */
 .navbar {
-  background-color: darkgray; 
+  background-color: rgb(59, 58, 58); 
   padding: 20px 20px; 
   display: flex; 
   justify-content: space-between; 
@@ -76,7 +76,7 @@
     display: none; 
     flex-direction: column; 
     position: absolute; 
-    background-color: darkgray; 
+    background-color: rgb(59, 58, 58); 
     top: 50px; 
     left: 0;
     right: 0;
