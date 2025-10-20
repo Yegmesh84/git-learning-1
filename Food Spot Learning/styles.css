@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "BBH Sans Bartle", sans-serif;
+    background-color: grey;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.logo{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2.5em;
+
+}
+
+header .logo span{
+    color: rgb(205, 55, 75);
+
+}
