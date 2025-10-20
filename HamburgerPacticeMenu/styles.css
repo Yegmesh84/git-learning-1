@@ -1,9 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar{
-    
+/* Navbar Styles */
+.navbar {
+  background-color: darkgray; 
+  padding: 20px 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; /
+}
+
+/* Logo Styles */
+.logo {
+  color: white; 
+  font-size: 23px; 
+  text-decoration: none; 
+}
+
+/* Hamburger Icon Styles */
+.menu-toggle {
+  color: white; 
+  font-size: 24px; 
+  cursor: pointer; 
+  display: none; 
+}
+
+/* Navigation Menu Styles */
+.menu {
+  display: flex; 
+  align-items: center; 
+}
+
+/* Menu List Styles */
+.menu ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex; 
+}
+
+/* Menu Item Styles */
+.menu li {
+  margin-left: 20px; 
+}
+
+/* Menu Link Styles */
+.menu a {
+  color: white; 
+  text-decoration: none; 
+  font-size: 18px; 
+}
+
+/* Hover Effect on Menu Links */
+.menu a:hover {
+  color: #ddd; 
+}
+
+/* Content Styles */
+.content {
+  padding: 20px;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  
+  .menu-toggle {
+    display: block; 
+  }
+
+  /* Hide the menu by default in mobile view */
+  .menu {
+    display: none; 
+    flex-direction: column; 
+    position: absolute; 
+    background-color: darkgray; 
+    top: 50px; 
+    left: 0;
+    right: 0;
+    z-index: 1; 
+    padding: 20px 0; 
+  }
+
+  /* Show the menu when active */
+  .menu.active {
+    display: flex; 
+  }
+
+  /* Adjust the menu list for mobile */
+  .menu ul {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  /* Adjust menu items for mobile */
+  .menu li {
+    margin: 10px 0; 
+  }
 }

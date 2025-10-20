@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HamburgerMenu</title>
+    <title>Burger Menus!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.com">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <div class="navbar"></div>
-            <a href="#" class="logo">Burger Bar Burger Joint!</a>
-            <p>Delicious burgers & More!</p>
-            <i class="menu" onclick="toggleMenu()"></i>
-            <div class="menu" class="menu">
-                <Ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </Ul>
-            </div>
-            <div class="content">
-                <h1>Burger Menus and More!</h1>
-                <p>A delicious sample of our burger menus!</p>
-            </div>
-            <script>
-                function togglemenu() {
-                    const menu = document.getElementById("menu");
-                    menu.classList.toggle("active");
-                }
-            </script>
-</body>
 </html>
+
+
+<div class="navbar">
+  <a href="#" class="logo">My Website</a>
+  
+
+  <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+  
+
+  <div id="menu" class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="content">
+  <h1>Welcome to My Website</h1>
+  <p>This is a sample website to demonstrate a responsive navigation menu.</p>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+  }
+</script>
+</body>
