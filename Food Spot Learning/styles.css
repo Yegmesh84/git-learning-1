@@ -5,13 +5,18 @@
     padding: 0;
     margin: 0;
     font-family: "BBH Sans Bartle", sans-serif;
-    background-color: grey;
+
 }
 header{
     display: flex;
     justify-content: space-between;
+    position: fixed;
     align-items: center;
-    padding: 40px 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .logo{
@@ -30,8 +35,13 @@ header .logo span{
 header .navigation{
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 10px;
 
+}
+
+header .navigation li{
+    color: white;
+    cursor: pointer;
 }
 
 header .navigation li a{
@@ -39,4 +49,44 @@ header .navigation li a{
     color: white;
     font-weight: 400;
     font-size: 1.5em;
+ 
+}
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://i.postimg.cc/s29LNR86/bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.content{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2{
+    font-size: 5em;
+    color: white;
+
+}
+
+.banner .content p{
+    font-size: 1em;
+    color: white;
+}
+
+.banner .content .btn{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(205, 55, 75);
+    letter-spacing: 2px;
+    margin-top: 40px;
+    padding: 10px 30px;
+    display: inline-block;
 }
