@@ -16,19 +16,21 @@ span{
     font-size: xx-large;
 }
 .navbarindex1{
-    display: flex;
-    flex-wrap: wrap;
     padding: 15px 30px;
     background-color: black;
-    border: 5px solid black;
+    border: 5px solid white;
     border-radius: 20%;
+    padding: 20px;
 }
-.nav-linksindex1 li{
-    align-items: center;
+.nav-linksindex1{
+    text-align: center;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
-
+.nav-linksindex1 li{
+    list-style: none;
+}
 .nav-linksindex1 li a{
     text-decoration: none;
     color: rgb(95, 105, 135);
@@ -44,14 +46,110 @@ span{
 .facilitywrapperindex1{
     border: 5px solid black;
     border-radius: 20%;
+    min-height: 400px;
+    padding: 60px 60px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
 }
 .facilitycardindex1{
     border: 5px solid black;
     border-radius: 20%;
     width: 140px;
     height: 140px;
+    flex-grow: 1;
+    padding: 20px;
+    box-shadow: 10px 10px;
 }
-
+h3{
+    font-size: xx-large;
+    text-align: center;
+    padding: 40px;
+}
+.Eventstaffwrapperindex1{
+    border: 5px solid black;
+    border-radius: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 400px;
+    padding: 60px 60px;
+    gap: 40px;
+    align-items: center;
+}
+.Staffcardindex1{
+    border: 5px solid black;
+    border-radius: 20%;
+    width: 200px;
+    height: 200px;
+    flex-grow: 1;
+    padding: 20px;
+    box-shadow: 10px 10px;
+}
+h4{
+    text-align: center;
+}
+.Staffcardindex1 p{
+    text-align: center;
+}
+.footerindex1{
+    padding: 40px;
+    padding: 15px 30px;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 20%;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.footerindex1 li{
+    list-style: none;
+}
+.footerindex1 li a{
+    text-decoration: none;
+    color: rgb(95, 105, 135);
+    transition: 0.6;
+}
+.footerindex1 li a:hover{
+    color: white;
+}
+.h4footerindex1{
+    font-size: x-large;
+    color: rgb(95, 105, 135);
+}
+.footerwrapindex1{
+    flex-grow: 1;
+    display: grid;
+    gap: 40px;
+}
+.footerinfoindex1{
+    border: 5px solid white;
+    border-radius: 20%;
+    text-align: center;
+    padding: 40px;
+}
+.footerinfoindex1 li{
+    color: rgb(95, 105, 135);
+    padding: 20px;
+}
+.bottomnavbarindex1{   
+    border: 5px solid white;
+    border-radius: 20%;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 45px;
+}
+.footerfollowusindex1{
+    border: 5px solid white;
+    border-radius: 20%;
+    text-align: center;
+    padding: 40px;
+}
+.upcomingindex1{
+    border: 5px solid white;
+    border-radius: 20%;
+    text-align: center;
+    padding: 40px;
+}
