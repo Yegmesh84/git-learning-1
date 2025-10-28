@@ -91,13 +91,12 @@ h4{
 }
 .staffbioindex1{
     border:5px solid palevioletred;
+    min-height: 220px;
 }
 .footerindex1{
-    padding: 40px;
-    padding: 15px 30px;
+    padding: 0px 20px 0px 20px;
     background-color: black;
     border: 5px solid white;
-    padding: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -132,14 +131,22 @@ h4{
     font-size: large;
     padding: 20px;
 }
+.footinfopicindex1{
+    border: 5px solid palevioletred;
+    padding: 20px;
+}
 .footerinfoindex1 li{
     color: rgb(95, 105, 135);
-    padding: 10px;
+    margin-bottom: 20px;
 }
 .bottomnavbarindex1{   
     border: 5px solid white;
     text-align: center;
     padding: 40px;
+}
+.botnavbboxindex1{
+    border: 5px solid palevioletred;
+    padding: 20px;
 }
 .bottomnavbarindex1 li{
     padding: 5px;
@@ -159,6 +166,19 @@ h4{
     font-size: large;
     padding: 20px;
 }
+.ffsocialmediawrapindex1{
+    padding: 20px;
+}
+.ffusindexpic1{
+    border: 5px solid palevioletred;
+    padding: 20px;
+    min-height: 160px;
+}
+.footerfollowusindex1 p{
+    color: rgb(95, 105, 135);
+    padding: 20px;
+    margin-top: 20px;
+}
 .upcomingindex1{
     border: 5px solid white;
     text-align: center;
@@ -169,6 +189,14 @@ h4{
     font-size: large;
     padding: 20px;
 }
+.ucpicindex1{
+    border: 5px solid palevioletred;
+    padding: 20px 20px 0px 20px;
+}
 .upcomingindex1 p{
     color: rgb(95, 105, 135);
+    padding: 20px;
+}
+.upcomingindex1 a{
+    cursor: pointer;
 }
