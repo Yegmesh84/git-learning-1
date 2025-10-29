@@ -36,7 +36,7 @@ span{
     text-align: center;
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    flex-direction: row;
 }
 .nav-linksindex1 li{
     list-style: none;
@@ -54,32 +54,35 @@ span{
     text-align: center;
 }
 .facilitywrapperindex1{
-    border: 5px solid black;
-    min-height: 400px;
-    padding: 60px 60px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 40px;
-    align-items: center;
+    border: 5px solid white;
+    padding: 60px;
     display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-image: url('img/wcecbackgtest4.gif');
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    overflow: hidden; 
 }
 .facilitycardindex1{
-    border: 5px solid black;
-    width: 140px;
-    height: 140px;
-    padding: 60px;
+    border: 5px solid white;
     box-shadow: 10px 10px palevioletred;
+    margin-bottom: 60px;
     width: 100%;
     height: auto;
-    display: block;
-    margin-bottom: 60px;
+    display: flex;
+    background-color: rgb(95, 105, 135);
 }
 .facilitycardindex1 img{
     margin: 40px 80px 40px 80px;
     border: 5px solid black;
 }
-.facilityroomindex1 h4{
-    font-size: x-large;
+.facilityroomindex1{
+    padding: 40px;
+}
+.facilityroomindex1 h3{
+    font-size: xx-large;
 }
 .facilityroomindex1 p{
     text-align: center;
@@ -90,7 +93,7 @@ h3{
     padding: 40px;
 }
 .Eventstaffwrapperindex1{
-    border: 5px solid black;
+    border: 5px solid white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -98,14 +101,22 @@ h3{
     padding: 60px 60px;
     gap: 40px;
     align-items: center;
+    background-image: url('img/wcecbackgtest4.gif');
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    overflow: hidden; 
 }
 .Staffcardindex1{
-    border: 5px solid black;
+    border: 5px solid white;
     padding: 20px;
-    box-shadow: 10px 10px black;
+    box-shadow: 10px 10px palevioletred;
+    background-color: rgb(95, 105, 135);
 }
 h4{
     text-align: center;
+    font-size: x-large;
+    margin-bottom: 20px;
 }
 .Staffcardindex1 p{
     text-align: center;
@@ -117,6 +128,7 @@ h4{
 }
 .staffbioindex1 img{
     border: 5px solid black;
+    padding: 20px;
 }
 .footerindex1{
     padding: 0px 20px 0px 20px;
@@ -136,15 +148,18 @@ h4{
 .footerindex1 li a:hover{
     color: white;
 }
-.h4footerindex1{
-    font-size: x-large;
+.h3footerindex1{
+    font-size: xx-large;
     color: rgb(95, 105, 135);
     padding: 20px;
 }
 .footerwrapindex1{
     gap: 40px;
-    display: flex;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 .footerinfoindex1{
     border: 5px solid white;
@@ -153,7 +168,7 @@ h4{
 }
 .footerinfoindex1 h5{
     color: rgb(95, 105, 135);
-    font-size: large;
+    font-size: xx-large;
     padding: 20px;
 }
 .footinfopicindex1{
@@ -178,7 +193,7 @@ h4{
 }
 .bottomnavbarindex1 h5{
     color: rgb(95, 105, 135);
-    font-size: large;
+    font-size: xx-large;
     padding: 20px;
 }
 .footerfollowusindex1{
@@ -188,7 +203,7 @@ h4{
 }
 .footerfollowusindex1 h5{
     color: rgb(95, 105, 135);
-    font-size: large;
+    font-size: xx-large;
     padding: 20px;
 }
 .ffsocialmediawrapindex1{
@@ -211,7 +226,7 @@ h4{
 }
 .upcomingindex1 h5{
     color: rgb(95, 105, 135);
-    font-size: large;
+    font-size: xx-large;
     padding: 20px;
 }
 .ucpicindex1{
