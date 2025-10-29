@@ -59,11 +59,19 @@ span{
     display: flex;
     align-content: center;
     justify-content: space-around;
-    background-image: url('img/wcecbackgtest4.gif');
-    background-position: center; 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    overflow: hidden; 
+    margin: 0px 80px 0px 80px;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.facilitywrapbackmovindex1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    pointer-events: none;
 }
 .facilitycardindex1{
     border: 5px solid white;
@@ -73,9 +81,11 @@ span{
     height: auto;
     display: flex;
     background-color: rgb(95, 105, 135);
+    flex-wrap: wrap;
+
 }
 .facilitycardindex1 img{
-    margin: 40px 80px 40px 80px;
+    margin: 40px;
     border: 5px solid black;
 }
 .facilityroomindex1{
@@ -86,6 +96,8 @@ span{
 }
 .facilityroomindex1 p{
     text-align: center;
+    max-width: 240px;
+    align-content: center;
 }
 h3{
     font-size: xx-large;
@@ -97,21 +109,36 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    min-height: 400px;
     padding: 60px 60px;
     gap: 40px;
     align-items: center;
-    background-image: url('img/wcecbackgtest4.gif');
-    background-position: center; 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    margin: 0px 80px 0px 80px;
+    flex-wrap: wrap;
+}
+.eventswrapbackmovindex1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    pointer-events: none;
 }
 .Staffcardindex1{
     border: 5px solid white;
     padding: 20px;
     box-shadow: 10px 10px palevioletred;
     background-color: rgb(95, 105, 135);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Staffcardindex1 img{
+    border: 5px solid black;
+    margin: 20px;
 }
 h4{
     text-align: center;
@@ -126,9 +153,8 @@ h4{
     min-height: 220px;
     padding: 20px;
 }
-.staffbioindex1 img{
-    border: 5px solid black;
-    padding: 20px;
+.staffbioindex1 p{
+    max-width: 400px;
 }
 .footerindex1{
     padding: 0px 20px 0px 20px;
