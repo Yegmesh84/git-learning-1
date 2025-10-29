@@ -14,6 +14,17 @@ span{
 .headerindex1{
     text-align: center;
     font-size: xx-large;
+    padding: 20px;
+}
+.headerwrapperindex1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.headertitleindex1{
+    border: 5px solid black;
+    padding: 40px;
 }
 .navbarindex1{
     padding: 15px 30px;
@@ -64,7 +75,7 @@ span{
     margin-bottom: 60px;
 }
 .facilitycardindex1 img{
-    margin: 40px;
+    margin: 40px 80px 40px 80px;
     border: 5px solid black;
 }
 .facilityroomindex1 h4{
@@ -90,11 +101,8 @@ h3{
 }
 .Staffcardindex1{
     border: 5px solid black;
-    width: 220px;
-    height: 220px;
-    flex-grow: 1;
     padding: 20px;
-    box-shadow: 10px 10px;
+    box-shadow: 10px 10px black;
 }
 h4{
     text-align: center;
@@ -105,6 +113,10 @@ h4{
 .staffbioindex1{
     border:5px solid palevioletred;
     min-height: 220px;
+    padding: 20px;
+}
+.staffbioindex1 img{
+    border: 5px solid black;
 }
 .footerindex1{
     padding: 0px 20px 0px 20px;
