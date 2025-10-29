@@ -46,19 +46,32 @@ span{
     border: 5px solid black;
     min-height: 400px;
     padding: 60px 60px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 40px;
     align-items: center;
+    display: flex;
 }
 .facilitycardindex1{
     border: 5px solid black;
     width: 140px;
     height: 140px;
-    flex-grow: 1;
-    padding: 20px;
-    box-shadow: 10px 10px;
+    padding: 60px;
+    box-shadow: 10px 10px palevioletred;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 60px;
+}
+.facilitycardindex1 img{
+    margin: 40px;
+    border: 5px solid black;
+}
+.facilityroomindex1 h4{
+    font-size: x-large;
+}
+.facilityroomindex1 p{
+    text-align: center;
 }
 h3{
     font-size: xx-large;
