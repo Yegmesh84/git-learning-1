@@ -23,14 +23,22 @@ span{
     align-items: center;
 }
 .headertitleindex1{
-    border: 5px solid black;
+    border: 5px solid white;
     padding: 40px;
+    background-color: black;
+}
+.headertitleindex1 h1{
+    color: rgb(95, 105, 135);
+}
+.headertitleindex1 h2{
+    color: rgb(95, 105, 135);
 }
 .navbarindex1{
     padding: 15px 30px;
     background-color: black;
     border: 5px solid white;
     padding: 20px;
+    margin: 40px 80px 0px 80px;
 }
 .nav-linksindex1{
     text-align: center;
@@ -160,8 +168,7 @@ h4{
     padding: 0px 20px 0px 20px;
     background-color: black;
     border: 5px solid white;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 80px 40px 80px;
 }
 .footerindex1 li{
     list-style: none;
