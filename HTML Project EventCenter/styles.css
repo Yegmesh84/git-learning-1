@@ -74,12 +74,9 @@ span{
 }
 .facilitywrapbackmovindex1{
     position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
     z-index: -1;
     pointer-events: none;
+    border: 5px solid white;
 }
 .facilitycardindex1{
     border: 5px solid white;
@@ -93,11 +90,13 @@ span{
 
 }
 .facilitycardindex1 img{
-    margin: 40px;
+    margin: 40px 0px 40px 40px;
     border: 5px solid black;
 }
 .facilityroomindex1{
     padding: 40px;
+    border: 5px solid palevioletred;
+    margin: 20px 30px 20px 30px;
 }
 .facilityroomindex1 h3{
     font-size: xx-large;
@@ -128,12 +127,9 @@ h3{
 }
 .eventswrapbackmovindex1{
     position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
     z-index: -1;
     pointer-events: none;
+    border: 5px solid white;
 }
 .Staffcardindex1{
     border: 5px solid white;
