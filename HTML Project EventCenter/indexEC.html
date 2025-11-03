@@ -71,17 +71,24 @@
         </div>
     </header>
     <div id="homeindex1" class="navbarindex1">
-        <ul class="nav-linksindex1">
-            <li><a href="#"><span>H</span>ome</a></li>
-            <li><a href="#"><span>A</span>bout</a></li>
-            <li><a href="#"><span>E</span>vents</a></li>
-            <li><a href="#"><span>T</span>he<span>F</span>acility</a></li>
-            <li><a href="#"><span>O</span>ur<span>T</span>eam</a></li>
-            <li><a href="#"><span>C</span>ontact<span>U</span>s</a></li>
-        </ul>
+        <div class="nav-containerindex1">
+            <div class="menu-toggleindex1" id="mobile-menuindex1">
+                <span class="barindex1"></span>
+                <span class="barindex1"></span>
+                <span class="barindex1"></span>
+            </div>
+            <ul class="nav-linksindex1">
+                <li><a href="#"><span>H</span>ome</a></li>
+                <li><a href="#"><span>A</span>bout</a></li>
+                <li><a href="#"><span>E</span>vents</a></li>
+                <li><a href="#"><span>T</span>he<span>F</span>acility</a></li>
+                <li><a href="#"><span>O</span>ur<span>T</span>eam</a></li>
+                <li><a href="#"><span>C</span>ontact<span>U</span>s</a></li>
+            </ul>
+        </div>
     </div>
     <main id="facilityidindex1" class="facilitymainindex1">
-            <h3>- <span>E</span>njoy <span>O</span>ur <span>B</span>eautiful <span>F</span>acility! -</h3>
+        <h3 class="eobfh3index1">- <span>E</span>njoy <span>O</span>ur <span>B</span>eautiful <span>F</span>acility! -</h3>
         <div class="facilitywrapperindex1">
             <video class="facilitywrapbackmovindex1" autoplay muted loop>
                             <source src="img/wcecbackgtest1.mp4" type="video/mp4">
@@ -256,5 +263,20 @@
             </div>    
         </div>
     </footer>
+    <script>
+    const menu = document.getElementById('mobile-menuindex1');
+    const navLinks = document.querySelector('.nav-linksindex1');
+
+    menu.addEventListener('click', () => {
+        menu.classList.toggle('activeindex1');
+        navLinks.classList.toggle('activeindex1');
+
+        if (navLinks.classList.contains('activeindex1')) {
+        navLinks.style.maxHeight = navLinks.scrollHeight + 'px';
+        } else {
+        navLinks.style.maxHeight = '0';
+        }
+    });
+    </script>
 </body>
 </html>

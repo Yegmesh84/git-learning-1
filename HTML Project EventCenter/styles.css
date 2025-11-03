@@ -199,7 +199,7 @@ h4{
 .footinfopicindex1{
     border: 5px solid palevioletred;
     padding: 20px;
-    
+
 }
 .footerinfoindex1 li{
     color: rgb(95, 105, 135);
@@ -277,4 +277,253 @@ h4{
 .upcomingindex1 p{
     color: rgb(95, 105, 135);
     padding: 20px;
+}
+* {
+  transition: 
+    all 0.7s ease-in-out,
+    color 0.6s ease-in-out,
+    background-color 0.6s ease-in-out;
+}
+.nav-linksindex1 li a,
+.footerindex1 li a {
+  transition: color 0.6s ease, transform 0.6s ease;
+}
+
+.nav-linksindex1 li a:hover,
+.footerindex1 li a:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+.facilitycardindex1:hover,
+.Staffcardindex1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+img:hover,
+video:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+}
+.menu-toggleindex1 {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.barindex1 {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(95, 105, 135);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggleindex1.activeindex1 .barindex1:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.menu-toggleindex1.activeindex1 .barindex1:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggleindex1.activeindex1 .barindex1:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+@media (max-width: 480px) {
+  .menu-toggleindex1 {
+    display: flex;
+    margin-left: auto;
+  }
+}
+  .nav-linksindex1 {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border: 3px solid white;
+    margin-top: 10px;
+  }
+
+  .nav-linksindex1.activeindex1 {
+    display: flex;
+  }
+
+  .nav-linksindex1 li {
+    padding: 10px 0;
+  }
+
+  .nav-linksindex1 li a {
+    font-size: 1.1rem;
+  }
+
+@media (min-width: 1600px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .headerindex1 {
+    font-size: 2rem;
+  }
+  .navbarindex1{
+    margin: 40px 80px;
+  }
+  .eobfh3index1{
+    padding: 40px 40px 0px 40px;
+  }
+
+  .facilitywrapperindex1,
+  .Eventstaffwrapperindex1,
+  .footerindex1 {
+    margin: 80px;
+    padding: 80px;
+  }
+
+  .facilitycardindex1,
+  .Staffcardindex1 {
+    gap: 60px;
+    padding: 60px;
+  }
+
+  .facilitycardindex1 img,
+  .Staffcardindex1 img {
+    width: 400px;
+    height: auto;
+  }
+
+  .footerwrapindex1 {
+    gap: 80px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .headerwrapperindex1,
+  .facilitywrapperindex1,
+  .Eventstaffwrapperindex1,
+  .footerwrapindex1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .headertitleindex1 {
+    padding: 20px;
+  }
+
+  .nav-linksindex1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .facilitycardindex1,
+  .Staffcardindex1 {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+  }
+
+  .facilitycardindex1 img,
+  .Staffcardindex1 img {
+    width: 80%;
+    height: auto;
+  }
+
+  .footerwrapindex1 {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+.headerindex1{
+    padding: 0px;
+}
+.navbarindex1{
+    margin-top: 0px;
+}
+.facilitywrapperindex1{
+    margin: 0px 10px 10px 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.headerwrapperindex1,
+.Eventstaffwrapperindex1,
+.footerwrapindex1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headertitleindex1 {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .headertitleindex1 h1,
+  .headertitleindex1 h2 {
+    font-size: 1.2rem;
+  }
+
+  .nav-linksindex1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-linksindex1 li a {
+    font-size: 1rem;
+  }
+
+  .facilitycardindex1,
+  .Staffcardindex1 {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  .facilitycardindex1 img,
+  .Staffcardindex1 img,
+  .footerinfoindex1 img {
+    width: 90%;
+    height: auto;
+    border-width: 3px;
+  }
+
+  .facilitywrapperindex1,
+  .Eventstaffwrapperindex1,
+  .footerindex1 {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footerindex1 {
+    text-align: center;
+  }
 }
