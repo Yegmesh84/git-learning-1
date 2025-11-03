@@ -336,7 +336,6 @@ video:hover{
 .nav-linksindex1{
     display: none;
     flex-direction: column;
-    width: 100%;
     text-align: center;
     background-color: black;
     border: 5px solid white;
@@ -357,6 +356,12 @@ body {
 }
 .headerindex1{
     font-size: 2rem;
+}
+.wcecmaspic:hover,
+.wceclogo:hover{
+  transform: none;
+  filter: none;
+  box-shadow: none;
 }
 .navbarindex1{
     margin: 40px 80px;
@@ -395,6 +400,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+.wceclogo{
+    padding: 22px;
+}
 .headertitleindex1{
     padding: 20px;
 }
@@ -432,6 +440,9 @@ body {
 }
 .headerindex1{
     padding: 0px;
+}
+.wceclogo{
+    padding: 18px;
 }
 .navbarindex1{
     margin-top: 0px;
