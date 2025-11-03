@@ -184,8 +184,12 @@ h4{
 .footerinfoindex1{
     border: 5px solid white;
     text-align: center;
-    padding: 40px;
-    max-width: 300px;
+    padding: 20px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .footerinfoindex1 h5{
     color: rgb(95, 105, 135);
@@ -195,6 +199,7 @@ h4{
 .footinfopicindex1{
     border: 5px solid palevioletred;
     padding: 20px;
+    
 }
 .footerinfoindex1 li{
     color: rgb(95, 105, 135);
@@ -203,7 +208,11 @@ h4{
 .bottomnavbarindex1{   
     border: 5px solid white;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .botnavbboxindex1{
     border: 5px solid palevioletred;
@@ -221,8 +230,12 @@ h4{
 .footerfollowusindex1{
     border: 5px solid white;
     text-align: center;
-    padding: 40px;
-    max-width: 400px;
+    padding: 20px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .footerfollowusindex1 h5{
     color: rgb(95, 105, 135);
@@ -245,8 +258,12 @@ h4{
 .upcomingindex1{
     border: 5px solid white;
     text-align: center;
-    padding: 40px;
-    max-width: 300px;
+    padding: 20px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .upcomingindex1 h5{
     color: rgb(95, 105, 135);
@@ -260,7 +277,4 @@ h4{
 .upcomingindex1 p{
     color: rgb(95, 105, 135);
     padding: 20px;
-}
-.upcomingindex1 a{
-    cursor: pointer;
 }
