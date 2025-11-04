@@ -194,6 +194,9 @@ h4{
     font-size: x-large;
     padding: 20px;
 }
+.contactmailindex:hover{
+    cursor: pointer;
+}
 .footinfopicindex1{
     border: 5px solid palevioletred;
     padding: 20px;
@@ -276,6 +279,9 @@ h4{
     color: rgb(95, 105, 135);
     padding: 20px;
 }
+.mascotvid:hover{
+    cursor: pointer;
+}
 * {
   transition: 
     all 0.7s ease-in-out,
@@ -356,6 +362,9 @@ body {
 .headerindex1{
     font-size: 2rem;
 }
+.mascotvid:hover{
+    box-shadow: none;
+}
 .wcecmaspic:hover,
 .wceclogo:hover{
   transform: none;
@@ -386,6 +395,12 @@ body {
 .Staffcardindex1 img{
     width: 400px;
     height: auto;
+}
+.wcecnamipic:hover,
+.wcecoutpic:hover{
+    transform: none;
+    filter: none;
+    box-shadow: none;
 }
 .footerwrapindex1{
     gap: 80px;
