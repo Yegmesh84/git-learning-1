@@ -154,8 +154,7 @@ h4{
 .footerindex1{
     background-color: black;
     border: 5px solid white;
-    margin: 40px 80px 40px 80px;
-
+    margin: 40px 80px;
 }
 .footerindex1 li{
     list-style: none;
@@ -380,6 +379,9 @@ body {
     gap: 60px;
     padding: 60px;
 }
+.facilityroomindex1 p{
+    min-width: 600px;
+}
 .facilitycardindex1 img,
 .Staffcardindex1 img{
     width: 400px;
@@ -420,6 +422,9 @@ h3{
     align-items: center;
     margin: 20px;
     padding: 30px;
+}
+.facilitycardindex1 p{
+    min-width: 440px;
 }
 .facilitycardindex1 img,
 .Staffcardindex1 img{
