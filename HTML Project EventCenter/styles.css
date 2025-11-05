@@ -282,6 +282,19 @@ h4{
 .mascotvid:hover{
     cursor: pointer;
 }
+.copypg1{
+    text-align: center;
+    margin: 10px;
+}
+input,
+button,
+select,
+textarea{
+    font: inherit;
+    color: inherit;
+    display: flex;
+    flex-direction: column;   
+}
 * {
   transition: 
     all 0.7s ease-in-out,
@@ -404,6 +417,12 @@ body {
 }
 .footerwrapindex1{
     gap: 80px;
+}
+.footerindex1{
+    margin: 80px 80px 10px 80px;
+}
+.copypg1{
+    margin: 0px 0px 10px 0px;
 }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
