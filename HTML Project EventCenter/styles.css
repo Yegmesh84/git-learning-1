@@ -286,14 +286,44 @@ h4{
     text-align: center;
     margin: 10px;
 }
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 input,
-button,
 select,
 textarea{
     font: inherit;
     color: inherit;
     display: flex;
     flex-direction: column;   
+}
+.ebuttonevents1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nlsignbuttonevents1{
+    font: inherit;
+    background-color: black;
+    color: rgb(95, 105, 135);
+    padding: 10px;
+    margin: 10px; 
+}
+.nlsignbuttonevents1:hover{
+    cursor: pointer;
+    color: palevioletred;
+    transform: scale(1.2);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+    filter: brightness(1.3);
+}
+.wceccal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 * {
   transition: 
@@ -472,6 +502,10 @@ h3{
 h1, h2, h3, h4, h5{
     font-size: 1.2rem;
 }
+.wceccal{
+    max-width: 500px;
+    max-height: 300px;   
+}
 }
 @media (max-width: 480px){
 body {
@@ -528,12 +562,14 @@ body {
     border-width: 5px;
 }
 .facilitywrapperindex1,
-.Eventstaffwrapperindex1,
-.footerindex1{
+.Eventstaffwrapperindex1{
     margin: 10px;
     padding: 10px;
 }
-
+.footerindex1{
+    margin: 40px 10px 10px 10px;
+    padding: 10px;
+}
 h1, h2, h3, h4, h5{
     font-size: 1rem;
     padding: 10px;
@@ -547,5 +583,9 @@ video{
 }
 .h3footerindex1{
     margin-bottom: 0px;
+}
+.wceccal{
+    max-width: 276px;
+    max-height: 76px;
 }
 }
