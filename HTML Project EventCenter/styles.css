@@ -464,8 +464,51 @@ body {
     margin: 0px 0px 10px 0px;
 }
 }
+@media (min-width: 1025px) and (max-width: 1599px) {
+body{
+    font-size: 1.1rem;
+}
+.menu-toggleindex1{
+    display: none;
+}
+.nav-linksindex1{
+    display: flex;              
+    flex-direction: row;        
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    border: none;
+    margin: 0;
+}
+.navbarindex1{
+    margin: 40px 60px;
+    padding: 20px 40px;
+}
+.facilitywrapperindex1,
+.Eventstaffwrapperindex1,
+.footerindex1{
+    margin: 60px;
+    padding: 60px;
+}
+.facilitycardindex1,
+.Staffcardindex1{
+    gap: 40px;
+    padding: 50px;
+}
+.facilitycardindex1 img,
+.Staffcardindex1 img{
+    width: 340px;
+    height: auto;
+}
+h1, h2, h3, h4, h5{
+    font-size: 1.4rem;
+}
+.returntothetop{
+    margin-top: 40px;
+}
+}
 @media (min-width: 481px) and (max-width: 1024px) {
-  body{
+body{
     font-size: 1rem;
 }
 .headerwrapperindex1,
@@ -520,7 +563,7 @@ h1, h2, h3, h4, h5{
 }
 }
 @media (max-width: 480px){
-body {
+body{
     font-size: 0.9rem;
 }
 .headerindex1{
@@ -551,31 +594,27 @@ body {
 .headertitleindex1 h2{
     font-size: 1.2rem;
 }
-  .menu-toggleindex1 {
+.menu-toggleindex1{
       display: flex;
       margin-left: auto;
-  }
-
-  .nav-linksindex1 {
+}
+.nav-linksindex1{
       display: none;
       flex-direction: column;
       text-align: center;
       background-color: black;
       border: 5px solid white;
       margin-top: 10px;
-  }
-
-  .nav-linksindex1.activeindex1 {
+}
+.nav-linksindex1.activeindex1{
       display: flex;
-  }
-
-  .nav-linksindex1 li {
+}
+.nav-linksindex1 li{
       padding: 10px 0px;
-  }
-
-  .nav-linksindex1 li a {
+}
+.nav-linksindex1 li a{
       font-size: 1.1rem;
-  }
+}
 .facilitycardindex1,
 .Staffcardindex1{
     flex-direction: column;
