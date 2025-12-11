@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FigRebrand
     </title>
-    <link rel="stylesheet" href="StyleFig.css">
+    <link rel="stylesheet" href="StyFig.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,18 @@
 </head>
 <body>
     <Header>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home1">Home</a>
+            <a href="#cs1">Case Studies</a>
+            <a href="#test1">Testimonials</a>
+            <a href="#rw1">Recent Work</a>
+            <a href="#git1">Contact Me</a>
+        </div>
         <div id="home1" class="Navbar">
             <div class="Navbarlinks">
                 <ul class="navbarmobile">
@@ -213,46 +225,80 @@
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-        const track = document.querySelector(".rcbwrapper");
-        const slides = Array.from(document.querySelectorAll(".rcwsub"));
+        document.addEventListener("DOMContentLoaded", function () {
 
-        const prevBtn = document.querySelector(".prev");
-        const nextBtn = document.querySelector(".next");
+            const hamburger = document.querySelector(".hamburger");
+            const mobileMenu = document.querySelector(".mobile-menu");
 
-        let index = 0;
+            if (hamburger && mobileMenu) {
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    mobileMenu.classList.toggle("active");
+                });
 
-        function slideWidth() {
-            // reads actual width including margins
-            return slides[0].getBoundingClientRect().width + 20;
-        }
-
-        function updateCarousel() {
-            const offset = -(index * slideWidth());
-            track.style.transform = `translateX(${offset}px)`;
-        }
-
-        function nextSlide() {
-            index++;
-            if (index > slides.length - 2) { 
-                index = 0; // loop
+                mobileMenu.querySelectorAll("a").forEach(a =>
+                    a.addEventListener("click", () => {
+                        hamburger.classList.remove("active");
+                        mobileMenu.classList.remove("active");
+                    })
+                );
             }
-            updateCarousel();
-        }
 
-        function prevSlide() {
-            index--;
-            if (index < 0) {
-                index = slides.length - 2; // loop
+            const track = document.querySelector(".rcbwrapper");
+            const slides = Array.from(document.querySelectorAll(".rcwsub"));
+            const prevBtn = document.querySelector(".prev");
+            const nextBtn = document.querySelector(".next");
+
+            let index = 0;
+            let visibleCount = getVisibleSlides();
+            let slideWidth = getSlideWidth();
+
+            function getVisibleSlides() {
+                const w = window.innerWidth;
+                if (w < 600) return 1;     
+                if (w < 1024) return 1;     
+                if (w < 1400) return 2;     
+                return 3;                   
             }
-            updateCarousel();
-        }
 
-        nextBtn.addEventListener("click", nextSlide);
-        prevBtn.addEventListener("click", prevSlide);
+            function getSlideWidth() {
+                return slides[0].offsetWidth + parseInt(getComputedStyle(slides[0]).marginRight || 0);
+            }
 
-        // Prevent text selection while clicking
-        prevBtn.onmousedown = nextBtn.onmousedown = (e) => e.preventDefault();
+            function updatePosition() {
+                track.style.transform = `translateX(-${index * slideWidth}px)`;
+            }
+
+            function next() {
+                index++;
+                if (index > slides.length - visibleCount) {
+                    index = 0; 
+                }
+                updatePosition();
+            }
+
+            function prev() {
+                index--;
+                if (index < 0) {
+                    index = slides.length - visibleCount; 
+                }
+                updatePosition();
+            }
+
+            
+            if (nextBtn) nextBtn.addEventListener("click", next);
+            if (prevBtn) prevBtn.addEventListener("click", prev);
+
+            
+            window.addEventListener("resize", () => {
+                visibleCount = getVisibleSlides();
+                slideWidth = getSlideWidth();
+                if (index > slides.length - visibleCount) index = slides.length - visibleCount;
+                updatePosition();
+            });
+
+            
+            updatePosition();
         });
     </script>
 </body>
