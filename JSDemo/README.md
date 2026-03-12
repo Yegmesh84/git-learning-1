@@ -1,0 +1,1 @@
+Open the HMTL in live server and proceed with the quiz. Hit the reset quiz button after completion.
